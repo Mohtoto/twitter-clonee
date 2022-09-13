@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import TweetBox from './TweetBox'
 import Post from './Post'
 import { db } from '../firebase';
+import FlipMove from 'react-flip-move';
 
 function Feed() {
+
 
   const [posts, setposts] = useState([]);
 
@@ -16,6 +18,8 @@ function Feed() {
     }, []);
     
     console.log(posts)
+
+
 
   return (
     <div className='feed'>
@@ -31,21 +35,21 @@ function Feed() {
         {/* TweetBox */}
 
         <TweetBox />
+      <FlipMove>
+        { posts.map((post , index)=> 
         
-      { posts.map((post , index)=> 
-      
-      
-        <Post 
-          key={index}
-          displayName={post.displayName}
-          username={post.username}
-          verified={post.verified}
-          text={post.text}
-          avatar={post.avatar}
-          image={post.image}
-          />
-          ) }
         
+          <Post 
+            key={post.text}
+            displayName={post.displayName}
+            username={post.username}
+            verified={post.verified}
+            text={post.text}
+            avatar={post.avatar}
+            image={post.image}
+            />
+            ) }
+        </FlipMove>
        
 
     </div>

@@ -2,17 +2,17 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
+
+
 const firebaseConfig = {
-
-    apiKey: "AIzaSyDXwkkacghJJKEku1HykerkrtOtKIxJytM",
-    authDomain: "clone-e05e9.firebaseapp.com",
-    projectId: "clone-e05e9",
-    storageBucket: "clone-e05e9.appspot.com",
-    messagingSenderId: "13910001851",
-    appId: "1:13910001851:web:7c5729b189b4a04f81819e"
-
-  };
-  
+  apiKey: "AIzaSyAG9H750nz1cQErLQA0rSTlWhoYW7lQzUc",
+  authDomain: "twteer-clone.firebaseapp.com",
+  projectId: "twteer-clone",
+  storageBucket: "twteer-clone.appspot.com",
+  messagingSenderId: "731948797667",
+  appId: "1:731948797667:web:923da47ae4c2fcb3f9bfd6",
+  measurementId: "G-66LSCN91GF"
+};
   // Initialize Firebase
  
 

@@ -17,7 +17,7 @@ function TweetBox() {
       db.collection('posts').add({
 
         displayName: 'Mohammad Totonchy',
-        username: 'mohtotonchy98',
+        username: 'mohtoto98',
         verified:true , 
         text : tweetMessage ,
         image: tweetImage,
