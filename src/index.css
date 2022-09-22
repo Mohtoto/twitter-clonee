@@ -332,3 +332,23 @@ body {
 
   padding: 20px;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .widgets {
+
+    display: none;
+  }
+
+  .sidebar{
+
+    display: none;
+  }
+
+  .app{
+
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 12px;
+  }
+}
